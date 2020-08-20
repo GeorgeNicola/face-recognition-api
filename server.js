@@ -24,14 +24,19 @@ const db = knex({
     client: 'pg',
     connection: {
         connectionString: process.env.DATABASE_URL,
-        ssl: true,
-    /*  host : '127.0.0.1',   // 127.0.0.1 = localhost
-      user : 'postgres',
-      password : 'Parola1',
-      database : 'smartbrain'
-    */
+        ssl: {
+            rejectUnauthorized: false
+         }
+    
     }
 })
+
+/*  host : '127.0.0.1',   // 127.0.0.1 = localhost
+    user : 'postgres',
+    password : 'Parola1',
+    database : 'smartbrain'
+*/
+
 
 
 
