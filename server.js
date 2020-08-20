@@ -50,7 +50,7 @@ app.use(cors())
 
 
 app.get('/', (req, res) => {
-   res.send('Face Recognition app API')
+   res.send('Face Recognition API')
 })
 
 
