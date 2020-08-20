@@ -36,7 +36,7 @@ const db = knex({
     password : 'Parola1',
     database : 'smartbrain'
 */
-
+//dfghn
 
 
 
@@ -51,7 +51,7 @@ app.use(cors())
 
 
 app.get('/', (req, res) => {
-   res.send('Hello boss!')
+   res.send('Hello actualizat!')
 })
 
 
