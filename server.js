@@ -26,7 +26,7 @@ const db = knex({
         connectionString: process.env.DATABASE_URL,
         ssl: {
             rejectUnauthorized: false
-         }
+        }
     
     }
 })
@@ -36,7 +36,6 @@ const db = knex({
     password : 'Parola1',
     database : 'smartbrain'
 */
-//dfghn
 
 
 
@@ -51,7 +50,7 @@ app.use(cors())
 
 
 app.get('/', (req, res) => {
-   res.send('Hello actualizat!')
+   res.send('Face Recognition app API')
 })
 
 
