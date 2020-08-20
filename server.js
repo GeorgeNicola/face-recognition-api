@@ -23,7 +23,7 @@ const image = require('./controllers/image')
 const db = knex({
     client: 'pg',
     connection: {
-        connectionString: process.env.DATABASE_URL,
+        host: process.env.DATABASE_URL,
         ssl: true,
     /*  host : '127.0.0.1',   // 127.0.0.1 = localhost
       user : 'postgres',
@@ -46,7 +46,7 @@ app.use(cors())
 
 
 app.get('/', (req, res) => {
-   res.send('Hello nigga!')
+   res.send('Hello boss!')
 })
 
 
