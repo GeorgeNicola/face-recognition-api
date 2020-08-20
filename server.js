@@ -1,3 +1,7 @@
+//ENVIROINTMENTAL VARIABLES
+const PORT = process.env.PORT || 3000
+
+
 // MODULES
 const express  = require('express')
 const bodyParser = require('body-parser')
@@ -60,21 +64,6 @@ app.post('/imageurl', (req, res) => { image.handleApiCall(req, res) })
 
 
 
-
-
-
-
-app.listen(3000, () => {
-    //Function - run right after listen
+app.listen(PORT, () => {
     console.log("App is running on port 3000")
 })
-
-/*
-/ --> res = this is working
-/signin --> POST = success/fail
-//Password is sent as a POST request to make sure it's hidden
-/register --> POST ( add data to the DB / Server ) = user
-/profile/:userId --> GET ( get the user info ) = user
-/image --> PUT ( user exist, make sure there is a update on user profile) = user ( updated profile - counter)
-
-*/
